@@ -11,11 +11,11 @@ RUN mix local.hex --force
 
 RUN mix local.rebar --force
 
-# COPY mix.* ./
+COPY mix.* ./
 
-# RUN mix deps.get
+RUN mix deps.get
 
-# RUN mix deps.compile
+RUN mix deps.compile
 
 COPY . .
 
