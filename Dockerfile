@@ -19,6 +19,8 @@ RUN mix deps.compile
 
 COPY . .
 
-# RUN mix compile
+RUN mix compile
 
 EXPOSE 4000
+
+CMD ["mix", "phx.server"]
